@@ -36,6 +36,46 @@ view: hc_accounts_kpi_dashboard {
     sql: ${TABLE}.login_no_error ;;
   }
 
+  measure: logged_in {
+    type: sum
+    sql: ${TABLE}.logged_in ;;
+  }
+
+  measure: reset_after_creation {
+    type: sum
+    sql: ${TABLE}.reset_after_creation ;;
+  }
+
+  measure: created_account {
+    type: sum
+    sql: ${TABLE}.created_account ;;
+  }
+
+  measure: reset_password {
+    type: sum
+    sql: ${TABLE}.reset_password ;;
+  }
+
+  measure: reset_password_page {
+    type: sum
+    sql: ${TABLE}.reset_password_page ;;
+  }
+
+  measure: create_password_illegal_characters {
+    type: sum
+    sql: ${TABLE}.create_password_illegal_characters ;;
+  }
+
+  measure: create_security_questions_illegal_characters {
+    type: sum
+    sql: ${TABLE}.create_security_questions_illegal_characters ;;
+  }
+
+  measure: reset_illegal_characters {
+    type: sum
+    sql: ${TABLE}.reset_illegal_characters ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
