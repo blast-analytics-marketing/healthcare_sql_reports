@@ -12,3 +12,4 @@ explore: illegal_character_errors
    sql_on: ${illegal_character_errors.date} = ${accounts_key_pages.date};;
   }
 }
+explore: fa_session_completions {}
